@@ -1,0 +1,17 @@
+<h1>
+  {{title}}
+</h1>
+<h2>My favorite hero is: {{Myhero}}</h2>
+<p>Heros:</p>
+<ul>
+  <li *ngFor="let heros of heroes">
+      {{ heros.name }}
+       {{heros.id}}
+  </li>
+</ul>
+<p *ngIf="heroes.length > 4">There are too many heros</p>
+<app-click>hello</app-click>
+<br>
+<br>
+<app-inp>hello again</app-inp>
+<app-enter>hell</app-enter>
